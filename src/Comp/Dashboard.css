@@ -1,0 +1,40 @@
+.Dashboard .box{
+    box-shadow: 5px 10px 20px 5px rgba(0, 81, 250, 0.1);
+}
+.Dashboard{
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    background-color: #fff;
+    height: 98vh;
+    width: 65%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    /* margin-top: -1%; */
+    /* margin-left: 25.8rem; */
+    margin-left: 1%;
+   
+    border-radius: 25px;
+}
+.boxes{
+    margin:1px 2px;
+}
+.boxes .box{
+    width: 26rem;
+    /* display: grid; */
+    margin: 0rem 2.6rem;
+    margin-top: 2rem;
+}
+.boxes .box h1{
+    font-size: 1.4rem;
+    padding: 0rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+.boxes .box h2{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.graph{
+    margin:1rem 1rem;
+    width:55%;
+}

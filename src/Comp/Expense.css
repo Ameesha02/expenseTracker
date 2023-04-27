@@ -1,0 +1,33 @@
+
+.Expense{
+    height: 98vh;
+    width: 65%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    /* margin-top: -1%; */
+    /* margin-left: 25.8rem; */
+    margin-left: 1%;
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    border-radius: 25px;
+    
+   
+}
+.Expense h1{
+    margin-left: 2rem;
+    padding-top: 1rem;
+    color: #05057a;
+    
+}
+.Expense .heading{
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    width: 96%;
+    height: 10%;
+    margin-left: 2%; 
+    border-radius: 26px;
+    margin-top: 9%;
+}
+.Expense .heading h2{
+    font-size:1.6rem;
+    padding-top: 1rem;
+    margin-left: 8rem;
+}

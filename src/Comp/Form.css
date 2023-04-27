@@ -1,0 +1,65 @@
+.name{
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    border-radius: 1rem;
+    padding: 10px 11px;
+    margin: 0.8rem 0.5rem;
+    width: 79%;}
+form {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 10rem; */
+    width: 95%;
+    margin-top: 2rem;
+    /* background-color: aqua; */
+}
+input,textarea,select,button{
+border-style: none;
+}
+select{
+    width: 20%; 
+    margin-left:2rem; 
+}
+button{
+    width: 50%;
+    margin: 0.8rem 1rem;
+    margin-top: 1rem;
+    height: 2rem;
+    border-radius: 7px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+}
+.result{
+    padding:2rem 0rem;
+}
+.result1{
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    border-radius: 7px;
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    height:10vh;
+    margin: 2.4rem 0px;
+    margin-top: -2rem;
+    
+}
+.result1 .icon{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 1rem;
+}
+.result1 .body h1{
+    font-size: 1.4rem;
+    color: black;
+    margin: 0.5rem 1rem;
+    margin-top: -0.5rem;
+}
+.result1 .body .main{
+    display: flex;
+    /* margin:0px 1px; */
+}
+.result1 .body .main .Sicon{
+    font-size: 1rem;
+}
+.result1 .body .main p{
+    margin:0px 5px;
+    font-size: .9rem;
+}
