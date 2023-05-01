@@ -31,8 +31,6 @@ export default function Form(props) {
                 onChange={(ele)=>handleChange(ele)}
                 name="firstName" className="name"
                 value={formData.firstName} 
-                placeholderTextColor="blue" 
-                style={{ fontSize: "16"}}
             />
             <input
                 type="text"
@@ -52,16 +50,16 @@ export default function Form(props) {
                 id="track"
                 value={formData.track}
                 onChange={(ele)=>handleChange(ele)}
-                name="favColor"
+                name="track"
                 className="name"
             >
                 <option value="">-- select --</option>
                
                 <option value="Rent">Rent</option>
                 <option value="Health<">Health</option>
-                <option value="green">Travelling</option>
-                <option value="blue">Grocery</option>
-                <option value="indigo">Investment</option>
+                <option value="Travelling">Travelling</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Investment">Investment</option>
                
             </select>
            
@@ -74,9 +72,8 @@ export default function Form(props) {
             />
             <button onSubmit={handleSubmit} onClick={(e)=>{
                 e.preventDefault();
-                // setFormData(" ")    
-                props.addList(formData);    
-
+                props.addList(formData);  
+                setFormData(" ");   
             }} style={{backgroundColor:"#bae8e8"}}>Submit</button>
         </form>
        
