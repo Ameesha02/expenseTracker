@@ -7,7 +7,7 @@ const Expenses = () => {
     <div style={{display:"flex"}}>
       <div className='hamburger'><GiHamburgerMenu/></div>
         <Nav/>
-        <Struct title="Expenses"/>
+        <Struct title="Expenses" storageKey='expenses-list'/>
 
     </div>
   )

@@ -13,6 +13,9 @@
     
    
 }
+.GiHamburgerMenu{
+    display: none;
+}
 .Expense h1{
     margin-left: 2rem;
     padding-top: 1rem;
@@ -36,4 +39,16 @@
     .Expense{
         width:98%
       }
+      .main-heading{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin:0rem 3rem;
+      }
+      .GiHamburgerMenu{
+        display: block;
+        font-size: 1.4rem;
+        margin-top:2.5rem;
+    }
   }
+  

@@ -29,8 +29,9 @@ const renderIcon = (props) => {
       return null;
   }
 };
+
   return (
-    <div>
+     <div>
 <div className="result1"><div className="icon">{renderIcon(props.item.track)}</div>
             <div className="body"><h1>{props.item.firstName}</h1>
                 <div className="main"><p><MdAttachMoney className="Sicon"/>{props.item.lastName}</p>

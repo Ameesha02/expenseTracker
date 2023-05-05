@@ -17,10 +17,10 @@ export default function Form(props) {
             }
         })
     }
-    function handleSubmit(event) {
-        event.preventDefault()
+    // function handleSubmit(event) {
+    //     event.preventDefault()
     
-    }
+    // }
 
 
     return (
@@ -70,7 +70,9 @@ export default function Form(props) {
                 className="name"
                 name="comments" 
             />
-            <button onSubmit={handleSubmit} onClick={(e)=>{
+            <button 
+            // onSubmit={handleSubmit} 
+            onClick={(e)=>{
                 e.preventDefault();
                 props.addList(formData);  
                 setFormData(" ");   

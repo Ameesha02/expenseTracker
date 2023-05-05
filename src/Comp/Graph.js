@@ -1,6 +1,7 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
+import "./Dashboard.css"
 Chart.register(...registerables);
 const Graph = () => {
   const data = {
@@ -25,7 +26,7 @@ const Graph = () => {
  
 
   return (
-      <div style={{width:"70%" ,margin:"0rem 5rem"}}><Line data={data}/></div>
+      <div  className="Line"><Line data={data}/></div>
    
   );
 }
