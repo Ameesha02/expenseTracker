@@ -7,10 +7,11 @@ import {MdAttachMoney,MdLogin}  from "react-icons/md"
 import {CgProfile} from "react-icons/cg"
 import {Link} from "react-router-dom"
 //ImCross GiHamburgerMenu
-const Nav = () => {
+const Nav = (props) => {
+  const navClass = props.class;
+
   return (
-  
-    <div className='nav' >
+    <div className={navClass} >
         <div className='upper'><CgProfile size={50} style={{marginTop:"2rem"}}/><div className="profile"> <h1 style={{margin: "1rem -1rem"}}>my name</h1>
         <p>your money</p></div>
         </div>
@@ -22,7 +23,7 @@ const Nav = () => {
             
         </div>
         <div className='low'><MdLogin/> sign out</div>
-     <div className='hamburger'><GiHamburgerMenu/></div> 
+     {/* <div className='hamburger'><GiHamburgerMenu/></div>  */}
     </div>
 
   )

@@ -1,15 +1,15 @@
 .name{
     box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
     border-radius: 1rem;
-    padding: 10px 11px;
-    margin: 0.8rem 0.5rem;
+    padding: 9px 11px;
+    margin: 0.7rem 0.5rem;
     width: 79%;}
 form {
     display: flex;
     flex-direction: column;
     /* margin-right: 10rem; */
     width: 95%;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     /* background-color: aqua; */
 }
 input,textarea,select,button{
@@ -28,18 +28,21 @@ button{
     box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
 }
 .result{
-    padding:2rem 0rem;
-    
+    padding:0rem 0rem;
+    width:55%;
+    margin-left:1rem;
+    margin-top:2rem;
 }
+
 .result1{
     box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
     border-radius: 7px;
     /* background-color: aqua; */
-    width:132%;
+    width:40rem;
     display: flex;
-    height:10vh;
-    margin: 2.4rem 0px;
-    margin-top: -2rem;
+    height:4rem;
+    /* margin: 2.4rem 0px; */
+    margin-top: 1rem;
     
 }
 .result1 .icon{
@@ -61,11 +64,67 @@ button{
     font-size: 1rem;
 }
 .result1 .body .main p{
-    margin:0px 5px;
-    font-size: .9rem;
+    margin: 0px -19px;
+    padding: 0rem 1rem;
+    font-size: 11px;
+    display: flex;
+    width: 6rem;
 }
-@media only screen and (max-width:800px) {
+.dicon{
+    font-size: 2rem;
+    margin:1rem 5rem;
+
+}
+
+
+  @media only screen and (max-width:1186px) {
     .result1{
-        width:120%
+      
+        width:32rem;}
+  }
+  @media only screen and (max-width:1000px) {
+    .result1{
+      
+        width:26rem;}
+        .dicon{
+            margin:1rem 3rem;
+        }
+  }
+  /* @media only screen and (max-width:850px) {
+   
+  } */
+  @media only screen and (max-width:870px) {
+    .result1{
+      
+        width:22.5rem;}
+        .dicon{
+            margin:1rem 1.5rem;
+        }
+  }
+  @media only screen and (max-width:800px) {
+    .result1{
+        width:26rem;
+      }
+    }
+
+      @media only screen and (max-width:650px) {
+        .result1{
+            width:24rem;
+            height:3rem;
+          }
+          .result1 .icon{
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 0.8rem 0.8rem;
+        }
+        .dicon{
+            font-size: 1.4rem;
+            margin:1rem 1.5rem;
+        
+        }
+        .result1 .body h1{
+            font-size: 1.2rem;
+    margin: 0.25rem 0.5rem;
+    margin-top: -1rem;
       }
   }

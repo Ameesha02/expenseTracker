@@ -2,20 +2,13 @@
     box-shadow: 5px 10px 20px 5px rgba(0, 81, 250, 0.1);
 }
 .Dashboard{
-    /* box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
-    background-color: #fff;
-    height: 98vh;
-    width: 65%;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    
-    margin-left: 1%;
-   
-    border-radius: 25px; */
-    height: 98vh;
+ 
+    /* height: 98vh; */
     width: 72%;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    height:calc(100vh - 16px);
+    
+    margin-top: 8px;
+    margin-bottom: 8px;
     /* margin-top: -1%; */
     /* margin-left: 25.8rem; */
     margin-left: 1%;
@@ -23,14 +16,22 @@
     box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
     border-radius: 25px;
     background-color: white;
+    /* overflow: hidden; */
 }
 @media only screen and (max-width:800px) {
     .Dashboard{
         width:98%
       }
+      .transactions h1{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        margin-top: 1rem;
+      }
   }
 .boxes{
     margin:1px 2px;
+    margin-top: -2rem;
 }
 .boxes .box{
     width: 26rem;
@@ -40,7 +41,7 @@
 }
 .boxes .box h1{
     font-size: 1.4rem;
-    padding: 0rem 4rem;
+    padding: 0.2rem 2rem;
     display: flex;
     justify-content: center;
 }
@@ -55,11 +56,12 @@
 }
 /* style={{width:"31rem",height:"16rem" ,margin:"0rem 3rem"}} */
 .Line{
-    width:70rem;
+    width:40rem;
     height:20rem;
-    margin:0rem 6rem;}
+    margin:1rem 6rem;}
    
-@media only screen and (max-width:800px){.Line{
+@media only screen and (max-width:800px){
+    .Line{
 width:31rem;
 height:16rem;
 margin:0rem 3rem;
@@ -81,4 +83,16 @@ margin:0rem 3rem;
     font-size: 0.8rem;
     display: flex;
     justify-content: center;}
+}
+@media only screen and (max-width:1025px){
+    .Line{
+        width:35rem;
+        height:20rem;
+        margin:1rem 4rem;}
+}
+@media only screen and (max-width:890px){
+    .Line{
+        width:30rem;
+        height:20rem;
+        margin:1rem 3rem;}
 }

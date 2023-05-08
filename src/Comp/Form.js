@@ -68,7 +68,8 @@ export default function Form(props) {
                 placeholder="Add a Refrence"
                 onChange={(ele)=>handleChange(ele)}
                 className="name"
-                name="comments" 
+                name="comments" rows="1" cols="4"
+                style={{resize:"none"}}
             />
             <button 
             // onSubmit={handleSubmit} 

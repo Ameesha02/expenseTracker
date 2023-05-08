@@ -1,7 +1,10 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import  './Dashboard.css'
 import Graph from './Graph'
+import SumContext from "./SumContext"
 const Dashboard = () => {
+  const sumOfLastNames = useContext(SumContext);
+
   return (
     <div className="Dashboard">
       <div className="transactions">
@@ -21,7 +24,7 @@ const Dashboard = () => {
       </div></div> 
       <div className="box" style={{marginLeft:"12rem"}}>
         <h1>Total Balance</h1>
-        <h2>$ 13580</h2>
+        <h2>${sumOfLastNames}</h2>
       </div></div>
      {/*  <div className="history">
         <h1>Recent History</h1>

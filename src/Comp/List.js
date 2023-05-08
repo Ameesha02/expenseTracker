@@ -30,17 +30,19 @@ const renderIcon = (props) => {
   }
 };
 
+
+
+
   return (
-     <div>
-<div className="result1"><div className="icon">{renderIcon(props.item.track)}</div>
+     <div >
+<div className="result1" ><div className="icon">{renderIcon(props.item.track)}</div>
             <div className="body"><h1>{props.item.firstName}</h1>
                 <div className="main"><p><MdAttachMoney className="Sicon"/>{props.item.lastName}</p>
                 <p><FiCalendar className="Sicon"/> {props.item.date}</p>
                 <p><BiMessageRoundedDots className="Sicon"/> {props.item.comments}</p>
                 </div>
             </div>
-            <div className="dicon" style={{fontSize:"2rem", margin:"1rem 11rem"
-}} onClick={e=>{
+            <div className="dicon"  onClick={e=>{
                 props.deleteItem(props.index)
             }}> <AiFillDelete/></div>
             </div>

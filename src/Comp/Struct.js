@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './Expense.css'
 import Form from './Form'
 import List from './List';
-import {GiHamburgerMenu} from "react-icons/gi"
 
+
+import SumContext from './SumContext';
 const Struct = (props) => {
  
+
+  
   const [list, setList] = useState(() => {
     const savedList = localStorage.getItem(props.storageKey);
     return savedList ? JSON.parse(savedList) : [];
@@ -45,30 +48,43 @@ const Struct = (props) => {
      
     }
   };
+  const [sumOfLastNames, setSumOfLastNames] = useState(0);
   
+ 
+  useEffect(() => {
+    let sum = 0;
+    list.forEach(item => {
+      sum += parseInt(item.lastName, 10);
+    });
+    setSumOfLastNames(sum);
+  }, [list]);
   return (
-
+    <SumContext.Provider value={sumOfLastNames}>
+     
    <div className='Expense' style={{backgroundColor:"#fff"}}>
       
-     {props.showForm!==false && <div><div className='main-heading'><h1>{props.title}</h1><GiHamburgerMenu className='GiHamburgerMenu'/></div> 
-        {props.showform!==false && <div className="heading" style={{backgroundColor:"#fff"}}>
-            <h2 style={{backgroundColor:"#fff"}}> Total <span style={{color:getColor(props.title)}}>{props.title}</span>: <span>$3120</span></h2>
+      <div className='main-heading'><h1>{props.title}</h1>
+   
+      </div> 
+        {props.showForm!==false && <div className="heading" style={{backgroundColor:"#fff"}}>
+            <h2 style={{backgroundColor:"#fff"}}> Total <span style={{color:getColor(props.title)}}>{props.title}</span>: <span>${sumOfLastNames}</span></h2>
         </div>}
-        <div className="form" style={{display:"flex"}}>
-       { props.showform!==false && <Form addList={addList}/>}
-        <div className="result" style={{width:"55%",marginLeft:"1rem",  marginTop:"2rem"}}>
+        { props.showForm!==false && <div className="form" style={{display:"flex"}}>
+        <Form addList={addList}/>
+        <div className="result">
          { list.map((listItem,i)=>{
             return(
               <List key={i} index={i} item={listItem} deleteItem={deleteListItem} style={{color:getColor(props.title)}}/>
             )
           })}</div>
-        
-        </div>
+       
         </div>}
+        
       {renderList()}
-    </div>
+    </div></SumContext.Provider>
 
   )
+ 
 }
 
 export default Struct
