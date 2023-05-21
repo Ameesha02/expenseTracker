@@ -5,6 +5,7 @@ import List from './List';
 
 
 import SumContext from './SumContext';
+import Dashboard from './Dashboard';
 const Struct = (props) => {
  
 
@@ -59,8 +60,8 @@ const Struct = (props) => {
     setSumOfLastNames(sum);
   }, [list]);
   return (
-    <SumContext.Provider value={sumOfLastNames}>
-     
+
+   
    <div className='Expense' style={{backgroundColor:"#fff"}}>
       
       <div className='main-heading'><h1>{props.title}</h1>
@@ -81,7 +82,7 @@ const Struct = (props) => {
         </div>}
         
       {renderList()}
-    </div></SumContext.Provider>
+    </div>
 
   )
  
