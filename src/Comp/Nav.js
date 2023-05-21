@@ -2,7 +2,7 @@ import React from 'react'
 import './nav.css'
 import {RiDashboardFill} from "react-icons/ri"
 import {FcMoneyTransfer } from "react-icons/fc"
-import {GiExpense,GiHamburgerMenu} from "react-icons/gi"
+import {GiExpense} from "react-icons/gi"
 import {MdAttachMoney,MdLogin}  from "react-icons/md"
 import {CgProfile} from "react-icons/cg"
 import {Link} from "react-router-dom"

@@ -4,8 +4,8 @@ import Form from './Form'
 import List from './List';
 
 
-import SumContext from './SumContext';
-import Dashboard from './Dashboard';
+// import SumContext from './SumContext';
+// import Dashboard from './Dashboard';
 const Struct = (props) => {
  
 
